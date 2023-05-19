@@ -1,0 +1,194 @@
+body {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'Varela Round', sans-serif;
+    background: #0575E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+    /* height: 10vh; */
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    height: 70px;
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 5px;
+}
+
+header h5 {
+    font-size: large;
+}
+
+/* header h1 {
+    padding: 0;
+} */
+
+.action_adder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action_adder input {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 30px;
+    width: 50vw;
+    height: 25px;
+    border: 0;
+    outline: none;
+    color: white;
+    transition: 0.3s ease;
+    margin-right: 10px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.action_adder input::placeholder {
+    color: white;
+}
+
+.action_adder input:hover {
+    /* transform: scale(1.1); */
+    box-shadow: 2px 2px;
+
+}
+
+.action_adder button {
+    padding: 0;
+    margin: 7px;
+    background: transparent;
+    border: 0;
+    transition: 0.3s ease;
+}
+
+.action_adder button:hover {
+    transform: scale(1.3);
+}
+
+.action_adder button img {
+    width: 40px;
+    height: 40px;
+}
+
+.action {
+    display: flex;
+    flex-direction: row;
+    width: calc(50vw + 85px);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action p {
+    width: calc(50vw + 70px - 170px);
+}
+
+.action button {
+    padding: 0;
+    margin: 7px;
+    background: transparent;
+    border: 0;
+    transition: 0.3s ease;
+}
+
+.action button:hover {
+    transform: scale(1.3);
+}
+
+.action button img {
+    width: 25px;
+    height: 25px;
+}
+
+.line {
+    height: 30px;
+    width: calc(50vw + 70px);
+    background-color: transparent;
+    position: absolute;
+    border-radius: 10px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerLine {
+    height: 5px;
+    width: calc(50vw + 70px);
+    background-color: white;
+    border-radius: 10px;
+    border: 0;
+
+}
+
+.delete_btn {
+    z-index: 1;
+}
+
+.edit_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021B79;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 5;
+    /* transform: translateY(20px); */
+    transform: translate(-10px, 20px);
+    transition: 0.2 ease;
+}
+
+.edit_box input {
+
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    width: calc(50vw - 50px);
+    height: 25px;
+    border: 0;
+    outline: none;
+    color: white;
+    transition: 0.3s ease;
+    margin-right: 10px;
+}
+
+.edit_box button {
+    padding: 0;
+    margin: 7px;
+    background: transparent;
+    border: 0;
+    transition: 0.3s ease;
+
+}
+
+.edit_box button img {
+    width: 25px;
+    height: 25px;
+}
